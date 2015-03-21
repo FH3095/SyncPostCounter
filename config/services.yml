@@ -1,0 +1,12 @@
+services:
+    fh3095.syncpostcounter.cron.task.recountposts:
+        class: fh3095\syncpostcounter\cron\recountposts
+        arguments:
+            - @config
+            - @auth
+            - @dbal.conn
+            - @log
+        calls:
+            - [set_name, [cron.task.recountposts]]
+        tags:
+            - { name: cron.task }
