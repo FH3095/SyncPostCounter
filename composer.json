@@ -21,8 +21,8 @@
             "phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
         },
         "version-check": {
-            "host": "raw.githubusercontent.com",
-			"directory": "/FH3095/SyncPostCounter/master",
+            "host": "fh3095.github.io",
+			"directory": "/phpbb/syncpostcounter",
 			"filename": "version.json"
         }
 
